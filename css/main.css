@@ -444,17 +444,18 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   .container {
+    /*width: 100%;*/
     max-width: 1024px;
   }
   /*HEADER NAV 1024*/
   header {
-    padding-top: 35px;
+    padding-top: 45px;
     height: 95px;
   }
   .main-nav__open-btn {
     width: 27px;
     height: 15px;
-    margin-top: -4px;
+    margin-top: -8px;
   }
   .main-nav__open-btn span {
     height: 3.5px;
@@ -463,7 +464,7 @@ footer {
 
   /*HEADER LOGO 1024*/
   .top-logo {
-    bottom: 0;
+    bottom: 2px;
     margin-left: -60.5px;
     width: 121px;
   }
@@ -472,23 +473,33 @@ footer {
   .contacts__tel {
     font-size: 14px;
   }
+  .contacts__time {
+    margin-top: 14px;
+  }
 
   /*MAIN PROMO 1024*/
   .promo {
     width: 600px;
+    padding-top: 161px;
+    margin-bottom: 60px;
   }
   .promo__title {
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 16px;
+    letter-spacing: -1.75px;
   }
   .promo__underline:after {
     width: 32px;
     height: 4px;
     margin-left: -16px;
+    bottom: -7px;
   }
   .promo__content {
     font-size: 16px;
     line-height: 40px;
+    letter-spacing: -1px;
+    margin-bottom: 52px;
   }
   .calculation-button {
     width: 199px;
