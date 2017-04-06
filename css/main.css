@@ -37,13 +37,9 @@ html {
 }
 
 body {
-  min-height: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 96px;
   position: relative;
-  background: #8665bd url(../img/bg.jpg) center no-repeat fixed;
-  background-size: cover;
   color: #fff;
   font-family: "GothamPro", sans-serif;
   font-size: 16px;
@@ -55,10 +51,16 @@ body {
   clear: both;
 }
 .container {
-  width: 89.58333%;
+  min-width: 480px;
+  width: 480px;
+  padding: 0 25px;
   margin: 0 auto;
 }
-
+.wrapper {
+  background: #8665bd url(../img/bg.jpg) center no-repeat fixed;
+  background-size: cover;
+  min-width: 480px;
+}
 /*HEADER NAV*/
 header {
   position: relative;
@@ -270,12 +272,10 @@ header {
 }
 
 /*MAIN PROMO*/
-main {
-  padding: 5px 0;
-}
 .promo {
-  margin-top: 85px;
-  margin-bottom: 80px;
+  padding-top: 5px;
+  margin-top: 65px;
+  margin-bottom: 85px;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -313,7 +313,7 @@ main {
   letter-spacing: -0.5px;
 }
 .calculation-button {
-  width: 95%;
+  width: 349px;
   height: 65px;
   margin: 0 auto;
   border: 1.5px solid #fff;
@@ -333,12 +333,7 @@ main {
 
 /*FOOTER*/
 footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   height: 96px;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
 }
 /*FOOTER BRANDS*/
@@ -352,8 +347,8 @@ footer {
 .brands__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 .brands__item img {
   display: block;
@@ -570,14 +565,7 @@ input[type=email]:-ms-input-placeholder {
   color: #96929e;
 }
 
-@media screen and (min-width: 360px) {
-  .brands__item {
-    margin-right: 14px;
-    margin-left: 13px;
-  }
-}
 @media screen and (min-width: 480px) {
-  .calculation-button,
   .calculate-form__submit {
     width: 349px;
   }
@@ -597,7 +585,7 @@ input[type=email]:-ms-input-placeholder {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 93.359375%;
+    width: 768px;
   }
   /*HEADER NAV 768*/
   header {
@@ -718,9 +706,10 @@ input[type=email]:-ms-input-placeholder {
   /*MAIN PROMO 768*/
   .promo {
     padding: 0;
-    padding-top: 105px;
+    padding-top: 5px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-top: 105px;
+    margin-bottom: 124px;
     width: 475px;
   }
   .promo__title {
@@ -753,9 +742,7 @@ input[type=email]:-ms-input-placeholder {
   }
 
   /*FOOTER 768*/
-  body {
-    padding-bottom: 53px;
-  }
+
   footer {
     height: 53px;
   }
@@ -767,7 +754,7 @@ input[type=email]:-ms-input-placeholder {
     height: 53px;
   }
   .brands__item {
-    margin: 0 16px;
+    margin: 0 16px 0 17px;
   }
   .brands__item--kazahtel {
     width: 60px;
@@ -884,19 +871,11 @@ input[type=email]:-ms-input-placeholder {
   }
 
 }
-@media screen and (min-width: 868px) {
-  .brands__item {
-    margin: 0 21px;
-  }
-}
-@media screen and (min-width: 968px) {
-  .brands__item {
-    margin: 0 26px;
-  }
-}
+
 @media screen and (min-width: 1074px) {
   .container {
     width: 1024px;
+    padding: 0;
   }
   /*HEADER NAV 1024*/
   header {
@@ -948,8 +927,8 @@ input[type=email]:-ms-input-placeholder {
   /*MAIN PROMO 1074px*/
   .promo {
     width: 600px;
-    padding-top: 161px;
-    margin-bottom: 60px;
+    margin-top: 161px;
+    margin-bottom: 179px;
   }
   .promo__title {
     font-size: 30px;
@@ -977,9 +956,6 @@ input[type=email]:-ms-input-placeholder {
   }
 
   /*FOOTER 1074px*/
-  body {
-    padding-bottom: 76px;
-  }
   footer {
     height: 76px;
   }
@@ -991,7 +967,7 @@ input[type=email]:-ms-input-placeholder {
     height: 76px;
   }
   .brands__item {
-    margin: 0 25px;
+    margin: 0 30px;
   }
   .brands__item--kazahtel {
     width: 74px;
@@ -1033,11 +1009,5 @@ input[type=email]:-ms-input-placeholder {
   /*Calculation modal 1074px*/
   .calculate-modal {
     top: 220px;
-  }
-}
-
-@media screen and (min-width: 1124px) {
-  .brands__item {
-    margin: 0 30px;
   }
 }

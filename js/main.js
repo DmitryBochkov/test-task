@@ -56,24 +56,6 @@ $(document).ready(function() {
             dots: true,
             arrows: false
           }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots: true,
-            arrows: false
-          }
-        },
-        {
-          breakpoint: 360,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            dots: true,
-            arrows: false
-          }
         }
       ]
     });
